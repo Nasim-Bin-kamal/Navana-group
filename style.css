@@ -41,3 +41,8 @@ h2 {
 button {
   animation: fadeInUp 0.3s ease-in 0.001s;
 }
+
+.curve-animation {
+  animation: linear duration timing-function delay iteration-count direction
+    fill-mode;
+}
