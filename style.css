@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Raleway-Regular;
+  src: url("assets/fonts/Raleway/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: Raleway-Semibold;
+  src: url("assets/fonts/Raleway/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/Roboto/Roboto-Light.ttf");
+}
+
+.course-names {
+  position: absolute;
+  width: 1004.88px;
+  height: 505.3px;
+  left: 0px;
+  top: 710.56px;
+
+  transform: rotate(-45deg);
+}
+
+.bg-animation {
+  animation: fadeIn 0.2s ease-in-out 0.05s;
+}
+
+.img-animation {
+  animation: fadeInRight 0.6s ease-in-out 0.05s;
+}
+
+h1 {
+  animation: fadeInUp 0.3s ease-in 0.001s;
+}
+h2 {
+  animation: fadeInUp 0.4s ease-in 0.001s;
+}
+
+button {
+  animation: fadeInUp 0.3s ease-in 0.001s;
+}
