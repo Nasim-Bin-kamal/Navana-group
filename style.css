@@ -9,40 +9,61 @@
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: Roboto-Light;
   src: url("assets/fonts/Roboto/Roboto-Light.ttf");
+  font-weight: 200;
 }
 
-.course-names {
+.circle {
+  overflow-wrap: inherit;
   position: absolute;
   width: 1004.88px;
-  height: 505.3px;
-  left: 0px;
-  top: 710.56px;
-
+  height: 1004.88px;
+  left: 185px;
+  top: 500.56px;
   transform: rotate(-45deg);
 }
 
+.course {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: anim 15s linear infinite reverse 900ms;
+}
+
+/* animations */
+
 .bg-animation {
-  animation: fadeIn 0.2s ease-in-out 0.05s;
+  animation: fadeIn 200ms ease-in-out 50ms;
 }
 
 .img-animation {
-  animation: fadeInRight 0.6s ease-in-out 0.05s;
+  animation: fadeInRight 600ms ease-in-out 50ms;
 }
 
 h1 {
-  animation: fadeInUp 0.3s ease-in 0.001s;
+  animation: fadeInUp 300ms ease-in 1ms;
 }
 h2 {
-  animation: fadeInUp 0.4s ease-in 0.001s;
+  animation: fadeInUp 400ms ease-in 1ms;
 }
 
 button {
-  animation: fadeInUp 0.3s ease-in 0.001s;
+  animation: fadeInUp 300ms ease-in 1ms;
 }
 
-.curve-animation {
-  animation: linear duration timing-function delay iteration-count direction
-    fill-mode;
+@keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.course span {
+  position: absolute;
+  left: 50%;
+  transform-origin: 0 500px;
 }

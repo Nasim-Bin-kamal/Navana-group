@@ -16,20 +16,19 @@
 
 </head>
 
-<body class=" max-w-[1440px] z-0">
+<body class=" max-w-[1440px] h-[900px] z-0 overflow-hidden">
     <div class="absolute z-1 bg-animation">
-        <img src="assets/bg.jpg" alt="">
+        <img class="w-[1440px] h-[900px]" src="assets/bg.jpg" alt="">
     </div>
     <!-- hero section -->
 
-    <div class="absolute flex justify-between items-center flex-row-reverse py-40 w-full z-3">
+    <div class="absolute flex justify-between items-center flex-row-reverse my-4  w-full z-2 ani">
         <div class="">
             <img class="max-w-[646px] max-h-[578px] object-right img-animation" src="assets/hero-image.png"
                 alt="hero-image">
         </div>
         <div class="pl-[168px]">
-            <h1
-                class="text-5xl font-['Raleway-Regular'] text-[#444444] font-normal animate__animated animate__slideInUp animate__duraion-">
+            <h1 class="text-5xl font-['Raleway-Regular'] text-[#444444] font-normal">
                 Become A</h1>
             <h2 class="text-[104px] font-['Raleway-Semibold'] text-[#444444] font-semibold ">JS Ninja
             </h2>
@@ -38,22 +37,35 @@
                 the
                 Web</button>
         </div>
-
     </div>
-    <div class="course-names curve-animation">
-        <h3 class="font-['Roboto'] text-4xl font-extralight text-black">React Node CSS Next Express Nest HTML GSAP
-            3.JS
-            SASS</h3>
+    <div class="circle">
+        <div class="course ">
+            <p class="font-['Roboto-Light'] text-black text-3xl font-extralight  ">
+
+                React Node CSS Next
+                Express Nest
+                HTML GSAP
+                3.JS
+                SASS
+
+            </p>
+        </div>
     </div>
 
 
 
 
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
-        AOS.init();
+        const course = document.querySelector('.course p');
+        course.innerHTML = course.innerText.split('').map((word, i) =>
+            `<span style="transform:rotate(${i * 3}deg)">${word}</span>`
+        ).join(' ')
     </script>
+
+
+
 </body>
 
 
